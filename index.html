@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="" content="">
+  <link rel="stylesheet" href="css/page_auth.css" title="style_login" type="text/css" />
+  <title>jogo</title>
+</head>
+<body id="body">
+  <div id="loading">
+    <div class="loading">
+      <div class="point">
+
+      </div>
+    </div>
+    <div id="labelNameUi">
+      Fine UI
+    </div>
+  </div>
+  <div id="login">
+    <h1 id="title" class="automatic_typing">Quiz eletrônica, feito por Igor .O Cardoso</h1>
+    <p id="subtitle">
+      Este é um quiz com perguntas relacionadas ao tema e matéria eletroeletrônica, as perguntas terão tempo ilimitado de resposta, sem pesca em!
+    </p>
+    <div id="blur">
+
+    </div>
+    <form id="form_auth">
+      <label><input placeholder="Digite seu usuário" type="text" name="user" id="user" /></label>
+      <label><input placeholder="Digite sua senha" type="password" name="password" id="password" /></label>
+      <button id="submit" type="button">Entrar</button>
+    </form>
+  </div>
+  <iframe id="page" width="100%" height="100%" src="pages/index.html" frameborder="0"></iframe>
+  <script src="js/auth.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/animations.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript" charset="utf-8">
+
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", function() {
+        navigator.serviceWorker
+        .register("/serviceWorker.js")
+        .then(res => console.log("service worker registered"))
+        .catch(err => console.log("service worker not registered", err));
+      });
+    }
+  </script>
+</body>
+</html>
