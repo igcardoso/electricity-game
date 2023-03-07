@@ -2,24 +2,22 @@ var defeat = new Audio('defeat.mp3');
 var victory = new Audio('victory.mp3');
 var myQuestions = [
 	{
-		question: "A oposição que os materiais oferecem à passagem da corrente elétrica chama-se ?",
+		question: "Por convenção, o sentido da corrente elétrica, num circuito, é o sentido do:",
 		answers: {
-			a: 'corrente elétrica',
-			b: 'resistência elétrica ',
-			c: 'tensão elétrica',
-			d: 'potência elétrica'
-		},
-		correctAnswer: 'b'
-	},
-	{
-		question: "Físico e matemático alemão que relacionou em uma lei as três grandezas elétricas principais (corrente, tensão e resistência) e demonstra como elas são intrinsecamente ligadas.",
-		answers: {
-			a: 'George Simon Ohm',
-			b: 'Tales de Mileto ',
-			c: 'Gustavo Kirchhoff',
-			d: 'Demócrito'
+			a: 'polo positivo do gerador para o polo negativo',
+			b: 'polo negativo do gerador para o polo positivo.'
 		},
 		correctAnswer: 'a'
+	},
+	{
+		question: "Símbolo de wallts e resistência.",
+		answers: {
+			a: 'P e I',
+			b: 'I e V',
+			c: 'P e R',
+			d: 'U e R'
+		},
+		correctAnswer: 'c'
 	},
 	{
 		question: "O aquecimento da água através do resistor de um chuveiro ocorre devido ao:",
