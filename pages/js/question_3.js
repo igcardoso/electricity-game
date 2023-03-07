@@ -19,7 +19,7 @@ var myQuestions = [
 			c: 'ficar em pé parado e com o guarda-chuva aberto.',
 			d: 'evitar ficar em áreas abertas, embaixo de árvores e se manter fora da água.'
 		},
-		correctAnswer: 'a'
+		correctAnswer: 'd'
 	},
 	{
 		question: "A potência elétrica indica o consumo de energia elétrica em certo intervalo de tempo.",
