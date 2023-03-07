@@ -28,16 +28,6 @@ var myQuestions = [
 			d: 'Hz'
 		},
 		correctAnswer: 'b'
-	},
-	{
-		question: "Qual a central de energia não renovável e poluente?",
-		answers: {
-			a: 'centrais termoelétricas',
-			b: 'centrais hidroelétricas ',
-			c: 'parques eólicos',
-			d: 'energia solar'
-		},
-		correctAnswer: 'a'
 	}
 ];
 
