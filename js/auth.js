@@ -29,7 +29,7 @@ submit.addEventListener("click", function() {
     var timer = setTimeout(function() {
       document.querySelector('#page').style.display = "flex";
       document.querySelector('#login').style.display = "none";
-      loading.style.left = "-100000px"
+      loading.style.left = "-100%"
     }, 3000);
   } else {
     window.alert("Usuario não encontrado");
