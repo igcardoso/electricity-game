@@ -6,6 +6,8 @@
   "background_color": "#ffffff",
   "theme_color": "#6200e2",
   "orientation": "portrait-primary",
+  "scope": "https://eletric-game.netlify.app/",
+  "prefer_related_applications": false,
   "icons": [
     {
       "src": "/img/icons/icon-72x72.png",
