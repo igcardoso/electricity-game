@@ -1,7 +1,7 @@
 {
   "name": "eletricity game OS",
   "short_name": "eletric game",
-  "start_url": "index.html",
+  "start_url": "/index.html",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#6200e2",
