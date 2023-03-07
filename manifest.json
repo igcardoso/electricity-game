@@ -66,5 +66,14 @@
       "sizes": "750x1334",
       "type": "image/jpg"
     }
-  ]
+  ],
+  "related_applications": [
+  {
+    "platform": "play",
+    "url": "https://finestore.netlify.app"
+  }, {
+    "platform": "itunes",
+    "url": "https://finestore.netlify.app"
+  }
+]
 }
