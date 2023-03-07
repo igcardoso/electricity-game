@@ -109,7 +109,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
     // show number of correct answers out of total
 
     if (numCorrect >= "3") {
-      resultsContainer.innerHTML = numCorrect + " respostas corretas de " + questions.length + `<button onclick='window.location.href = "question_2.html"' id='next' type='button'>Próximo</button>`;
+      resultsContainer.innerHTML = numCorrect + " respostas corretas de " + questions.length + `<button onclick='window.location.href = "prize.html"' id='next' type='button'>Próximo</button>`;
       victory.play();
     } else {
       window.alert("Você errou 2 ou mais questões");
