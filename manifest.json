@@ -58,7 +58,7 @@
       "purpose": "any"
     }
   ],
-  "description": "Este é um jogo criado para fins educacionais, o site é uma pwa, e por isso pode ser instalado e visualizado na gaveta de apps do seu smartphone, por se tratar de uma pwa, possui um serviceworker que o permite a utilização offline."
+  "description": "Este é um jogo criado para fins educacionais, o site é uma pwa, e por isso pode ser instalado e visualizado na gaveta de apps do seu smartphone, por se tratar de uma pwa, possui um serviceworker que o permite a utilização offline.",
   "lang": "pt-br",
   "dir": "ltr",
   "display_override": [
