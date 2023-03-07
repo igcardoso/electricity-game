@@ -20,14 +20,14 @@ var myQuestions = [
 		correctAnswer: 'c'
 	},
 	{
-		question: "O aquecimento da água através do resistor de um chuveiro ocorre devido ao:",
+		question: "Qual o nome que recebeu a unidade de medida de resistência elétrica?",
 		answers: {
-			a: 'aumento súbito da temperatura ambiente',
-			b: 'capacitor que está presente no chuveiro',
-			c: 'Diodo que está presente no chuveiro',
-			d: 'efeito joule'
+			a: 'Volt',
+			b: 'Ohm',
+			c: 'Watt',
+			d: 'Hz'
 		},
-		correctAnswer: 'd'
+		correctAnswer: 'b'
 	},
 	{
 		question: "Qual a central de energia não renovável e poluente?",
