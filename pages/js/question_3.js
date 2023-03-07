@@ -2,42 +2,38 @@ var defeat = new Audio('defeat.mp3');
 var victory = new Audio('victory.mp3');
 var myQuestions = [
 	{
-		question: "A oposição que os materiais oferecem à passagem da corrente elétrica chama-se ?",
+		question: "De acordo com os principais tipos de transformação de energia, qual alternativa indica corretamente esse processo ?",
 		answers: {
-			a: 'corrente elétrica',
-			b: 'resistência elétrica ',
-			c: 'tensão elétrica',
-			d: 'potência elétrica'
+			a: 'televisão transforma energia elétrica em energia cinética',
+			b: 'rádio transforma energia elétrica em energia sonora',
+			c: 'chuveiro elétrico transforma energia elétrica em energia luminosa',
+			d: 'ferro de passar roupas transforma energia elétrica em energia solar'
 		},
 		correctAnswer: 'b'
 	},
 	{
-		question: "Físico e matemático alemão que relacionou em uma lei as três grandezas elétricas principais (corrente, tensão e resistência) e demonstra como elas são intrinsecamente ligadas.",
+		question: "Durante uma tempestade com raios e trovões a melhor maneira de se proteger contra acidente com raios é:",
 		answers: {
-			a: 'George Simon Ohm',
-			b: 'Tales de Mileto ',
-			c: 'Gustavo Kirchhoff',
-			d: 'Demócrito'
+			a: 'ficar dentro do mar ou da piscina ou rio.',
+			b: 'se abrigar em baixo das árvores',
+			c: 'ficar em pé parado e com o guarda-chuva aberto.',
+			d: 'evitar ficar em áreas abertas, embaixo de árvores e se manter fora da água.'
 		},
 		correctAnswer: 'a'
 	},
 	{
-		question: "O aquecimento da água através do resistor de um chuveiro ocorre devido ao:",
+		question: "A potência elétrica indica o consumo de energia elétrica em certo intervalo de tempo.",
 		answers: {
-			a: 'aumento súbito da temperatura ambiente',
-			b: 'capacitor que está presente no chuveiro',
-			c: 'Diodo que está presente no chuveiro',
-			d: 'efeito joule'
+			a: 'verdadeiro',
+			b: 'falso'
 		},
-		correctAnswer: 'd'
+		correctAnswer: 'a'
 	},
 	{
-		question: "Qual a central de energia não renovável e poluente?",
+		question: "O quilowatt(KW) é uma unidade de medida de potência.",
 		answers: {
-			a: 'centrais termoelétricas',
-			b: 'centrais hidroelétricas ',
-			c: 'parques eólicos',
-			d: 'energia solar'
+			a: 'verdadeiro',
+			b: 'falso'
 		},
 		correctAnswer: 'a'
 	}
