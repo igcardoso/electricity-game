@@ -18,6 +18,10 @@ function startTimer(duration, display) {
 window.onload = function () {
   
     setTimeout(() => {
+      document.querySelector("#timer").style.background = "red";
+    }, 20000)
+  
+    setTimeout(() => {
       document.querySelector("#alert").style.display = "block";
        defeat.play();
        
