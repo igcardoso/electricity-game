@@ -47,5 +47,22 @@
       "type": "image/png",
       "sizes": "512x512"
     }
-  ]
+  ],
+  "description": "Este é um jogo criado para fins educacionais, o site é uma pwa, e por isso pode ser instalado e visualizado na gaveta de apps do seu smartphone, por se tratar de uma pwa, possui um serviceworker que o permite a utilização offline.",
+  "lang": "pt-br",
+  "dir": "ltr",
+  "display_override": [
+    "standalone"
+  ],
+  "categories": [
+    "education",
+    "game"
+  ],
+  "screenshots": [
+    {
+      "src": "https://raw.githubusercontent.com/igcardoso/electricity-game/main/preview/Screenshot_2023-03-07-08-30-19-507_com.android.chrome.jpg",
+      "sizes": "750x1334",
+      "type": "image/jpg"
+    }
+  ],
 }
