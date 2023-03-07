@@ -19,7 +19,7 @@ window.onload = function () {
   
     setTimeout(() => {
       document.querySelector("#timer").style.background = "red";
-    }, 20000)
+    }, 40000)
   
     setTimeout(() => {
       document.querySelector("#alert").style.display = "block";
