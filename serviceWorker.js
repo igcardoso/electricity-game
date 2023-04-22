@@ -9,7 +9,8 @@ const assets =  [
   "/media/banner.png",
   "/media/banner_2.png",
   "/media/banner_3.png",
-  "/media/banner_4.png"
+  "/media/banner_4.png",
+  "/media/logo.png"
 ];
 
 self.addEventListener("install", installEvent => {
