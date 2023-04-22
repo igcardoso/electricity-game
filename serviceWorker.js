@@ -5,7 +5,13 @@ const assets =  [
   "/css/app.css",
   "/css/home.css",
   "/css/global.css",
-  "/css/about_project.css"
+  "/css/about_project.css",
+  "/media/logo.png",
+  "/media/banner.png",
+  "/media/banner_2.png",
+  "/media/banner_3.png",
+  "/media/banner_4.png",
+  "/media/img_about_01.png"
 ];
 
 self.addEventListener("install", installEvent => {
