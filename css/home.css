@@ -1,0 +1,123 @@
+@charset"utf-8";
+
+
+main .home {
+  position: relative;
+  margin: 0;
+  background: #ffffff;
+  color: #000000;
+  padding-bottom: 30px;
+}
+
+main .home .top {
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-gap: 24px;
+}
+
+main .home .banner {
+  padding-top: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+main .home .banner img {
+  height: 190px;
+}
+
+main .home .homepage_title {
+  margin: 20px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 30px;
+  max-width: 260px;
+}
+
+main .home .homepage_title:after {
+  content: '|';
+  animation: digitizer .9s infinite;
+}
+
+main .home div:last-child {
+  margin-top: 30px;
+}
+
+main .home div:last-child p {
+  margin: 20px;
+}
+
+@keyframes digitizer {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+main .home .containment_contact_networks {
+  position: absolute;
+  bottom: -25px;
+  width: 100%;
+  text-align: center;
+  z-index: 2000;
+}
+
+main .home .containment_contact_networks div:first-child {
+  margin-left: 0;
+}
+
+
+main .home .containment_contact_networks .contact_networks {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 8em;
+  background: #ffffff;
+  border: .1px solid #000000;
+  padding: 10px;
+  padding-bottom: 8px;
+  color: #000000;
+  margin-left: 20px;
+  transition: .5s ease;
+}
+
+main .home .containment_contact_networks .contact_networks:hover {
+  transform: scale(1.2);
+}
+
+main .home .containment_contact_networks .contact_networks.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 2000;
+  border: 0;
+  border-radius: 0;
+  padding-top: 70%;
+  margin: 0;
+}
+
+main .home .containment_contact_networks .contact_networks.active svg {
+  margin-left: -20px;
+  width: 70px;
+  height: 70px;
+}
+
+main .home .containment_contact_networks .contact_1.active svg path {
+  fill: rgb(255,0,76);
+}
+
+main .home .containment_contact_networks .contact_2.active svg {
+  border: 2px solid #000000;
+  padding: 5px;
+  border-radius: .8em
+
+}
+
+main .home .containment_contact_networks .contact_3.active svg path {
+  fill: #00b12b;
+}
