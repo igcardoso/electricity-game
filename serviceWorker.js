@@ -2,6 +2,7 @@ const staticDevCoffee = "dev-coffee-site-v1";
 const assets =  [
   "/",
   "/index.html",
+  "/media/img_about_01.png" 
   "/css/app.css",
   "/css/home.css",
   "/css/global.css",
@@ -9,8 +10,7 @@ const assets =  [
   "/media/banner.png",
   "/media/banner_2.png",
   "/media/banner_3.png",
-  "/media/banner_4.png",
-  "/media/img_about_01.png"
+  "/media/banner_4.png"
 ];
 
 self.addEventListener("install", installEvent => {
