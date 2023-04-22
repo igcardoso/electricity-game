@@ -6,7 +6,8 @@ const assets =  [
   "/css/home.css",
   "/css/global.css",
   "/css/about_project.css",
-  "/media/banner.png"
+  "/media/banner.png",
+  "/media/banner_2.png"
 ];
 
 self.addEventListener("install", installEvent => {
