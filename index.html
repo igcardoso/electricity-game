@@ -335,6 +335,78 @@
         .catch(err => console.log("service worker not registered", err));
       });
     }
+
+    var menu_button = document.querySelector(".navigation_bar .menu_button");
+    var retractable_bottom_menu = document.querySelector("main .retractable_bottom_menu");
+    var span_homepage_title = document.querySelector("main .home .homepage_title span");
+    var homepage_title = document.querySelector("main .home .homepage_title label");
+    var day = new Date();
+    var hr = day.getHours();
+
+
+    if (hr >= 0 && hr < 12) {
+      span_homepage_title.innerHTML = "Bom dia,";
+    } else if (hr == 12) {
+      span_homepage_title.innerHTML = "Bom meio-dia,";
+    } else if (hr > 12 && hr <= 17) {
+      span_homepage_title.innerHTML = "Boa tarde,";
+    } else {
+      span_homepage_title.innerHTML = "Boa noite,";
+
+    }
+
+    menu_button.addEventListener("click", ()=> {
+      retractable_bottom_menu.classList.toggle('active');
+    });
+
+
+    function typeWriter(elemento) {
+      const textoArray = elemento.innerHTML.split('');
+      elemento.innerHTML = '';
+      textoArray.forEach((letra, i) => {
+        setTimeout(() => elemento.innerHTML += letra, 95 * i);
+      });
+    }
+
+    const titulo = homepage_title
+    typeWriter(titulo);
+
+
+    var contact_1 = document.querySelector(".containment_contact_networks .contact_1");
+    var contact_2 = document.querySelector(".containment_contact_networks .contact_2");
+    var contact_3 = document.querySelector(".containment_contact_networks .contact_3");
+    var navigation_bar = document.querySelector(".navigation_bar");
+
+    contact_1.addEventListener("click", ()=> {
+      contact_1.classList.add('active');
+      navigation_bar.style.display = "none";
+      setTimeout(function() {
+        window.location.href = "https://instagram.com";
+      }, 1000);
+    });
+    contact_2.addEventListener("click", ()=> {
+      contact_2.classList.add('active');
+      navigation_bar.style.display = "none";
+      setTimeout(function() {
+        window.location.href = "https://github.com";
+      }, 1000);
+    });
+    contact_3.addEventListener("click", ()=> {
+      contact_3.classList.add('active');
+      navigation_bar.style.display = "none";
+      setTimeout(function() {
+        window.location.href = "https://whatsapp.com";
+      }, 1000);
+    });
+
+
+    var list_functions = document.querySelectorAll("main .project .list_functions .function");
+
+    list_functions.forEach((list_functions) =>
+      list_functions.addEventListener('click', (event) => {
+        list_functions.classList.toggle('active');
+      })
+    );
   </script>
 </body>
 </html>
