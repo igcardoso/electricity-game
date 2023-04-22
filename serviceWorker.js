@@ -1,4 +1,4 @@
-const staticDevCoffee = "dev-onu-site-v1";
+const staticOnuSite = "onu-site-v1";
 const assets =  [
   "/",
   "/index.html",
@@ -14,7 +14,7 @@ const assets =  [
 
 self.addEventListener("install", installEvent => {
   installEvent.waitUntil(
-    caches.open(staticDevCoffee).then(cache => {
+    caches.open(staticOnuSite).then(cache => {
       cache.addAll(assets);
     })
   );
