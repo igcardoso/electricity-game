@@ -2,7 +2,7 @@ const staticDevCoffee = "dev-coffee-site-v1";
 const assets =  [
   "/",
   "/index.html",
-  "/media/img_about_01.png" 
+  "/media/img_about_01.png",
   "/css/app.css",
   "/css/home.css",
   "/css/global.css",
