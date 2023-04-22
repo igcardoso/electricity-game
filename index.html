@@ -34,33 +34,297 @@
   <title>eletric game</title>
 </head>
 <body>
-  <div id="loading">
-    <div class="loading">
-      <div class="point">
+  <style type="text/css" media="all">
 
+    main .project {
+      background: #ffffff;
+      padding: 20px;
+    }
+
+    main .project .top h1 {
+      max-width: 60%;
+      font-weight: 800;
+      font-size: 30px;
+      margin-bottom: 45px;
+      background: -webkit-linear-gradient(20deg, #9e0000, #00009e);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+
+@media screen and (max-width: 768px) {
+
+      main .project .top h1 {
+        max-width: 260px;
+        font-weight: 800;
+        font-size: 23px;
+        margin-bottom: 45px;
+        background: -webkit-linear-gradient(20deg, #9e0000, #00009e);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+
+    main .project .list_functions {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      grid-gap: 24px;
+    }
+
+    main .project .list_functions .function {
+      border-radius: 1.2em;
+      background: #efefef;
+      font-weight: 700;
+      padding: 20px;
+      padding-bottom: 27px;
+      overflow: hidden;
+      transition: height 1s ease;
+      height: 23px;
+    }
+
+    main .project .list_functions .function  span {
+      width: 40px;
+      height: 70px;
+      padding: 10px;
+      border-right: 2px solid rgba(130,130,130,0.217);
+      margin-right: 20px;
+    }
+
+    main .project .list_functions .function  span svg {
+      transform: rotate(45deg);
+      transition: .5s ease;
+    }
+
+    main .project .list_functions .function.active span svg {
+      transform: rotate(0deg);
+    }
+
+    main .project .list_functions .function.active {
+      height: auto;
+    }
+
+
+  </style>
+  <nav class="navigation_bar">
+    <div class="containment_menu_button">
+      <div class="menu_button">
+        <svg style="margin-top: 6px;" width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g id="Menu / Menu_Alt_03">
+            <path id="Vector" d="M5 17H13M5 12H19M5 7H13" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </g>
+        </svg>
       </div>
     </div>
-    <div id="labelNameUi">
-      Fine UI
+    <div class="containment_options">
+      <div style="padding-top: 30px;">
+        <p class="logo_image">
+          Infinix OS
+        </p>
+      </div>
+      <div class="connect_button_contention">
+        <p class="connect_button">
+          Conectar
+        </p>
+      </div>
+      <div class="user_photo">
+        <img class="user_image" src="media/logo.jpg" alt="logo" />
+      </div>
     </div>
-  </div>
-  <div id="login">
-    <h1 id="title" class="automatic_typing">Quiz eletrônica, feito por Igor .O Cardoso</h1>
-    <p id="subtitle">
-      Este é um quiz com perguntas relacionadas ao tema de eletricidade,as perguntas terão tempo ilimitado de respostas!
-    </p>
-    <div id="blur">
+  </nav>
+  <main>
+    <section class="home">
+      <div class="top">
+        <div class="banner">
+          <img src="media/banner.png" alt="banner" />
+        </div>
+        <div>
+          <h1 class="homepage_title">
+            <span></span>
+            <label>quer saber uma pouco mais sobre nosso projeto? </label>
+          </h1>
+          <p>
+            texto e um livro sobre a história de uma mulher de um computador de maneira mais moderna que você pode fazer a qualquer hora do mundo inteiro em um novo sistema operacional como um projeto.
+          </p>
+        </div>
+      </div>
+      <div class="containment_contact_networks">
+        <div class="contact_1 contact_networks">
+          <svg width="26" height="26" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
-    </div>
-    <form id="form_auth">
-      <label><input placeholder="Digite seu usuário" type="text" name="user" id="user" /></label>
-      <label><input placeholder="Digite sua senha" type="password" name="password" id="password" /></label>
-      <button id="submit" type="button">Entrar</button>
-    </form>
-  </div>
-  <iframe id="page" width="100%" height="100%" src="pages/index.html" frameborder="0"></iframe>
-  <script src="js/auth.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/animations.js" type="text/javascript" charset="utf-8"></script>
+            <title>instagram [#167]</title>
+            <desc>Created with Sketch.</desc>
+            <defs>
+
+            </defs>
+            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g id="Dribbble-Light-Preview" transform="translate(-340.000000, -7439.000000)" fill="#000000">
+                <g id="icons" transform="translate(56.000000, 160.000000)">
+                  <path d="M289.869652,7279.12273 C288.241769,7279.19618 286.830805,7279.5942 285.691486,7280.72871 C284.548187,7281.86918 284.155147,7283.28558 284.081514,7284.89653 C284.035742,7285.90201 283.768077,7293.49818 284.544207,7295.49028 C285.067597,7296.83422 286.098457,7297.86749 287.454694,7298.39256 C288.087538,7298.63872 288.809936,7298.80547 289.869652,7298.85411 C298.730467,7299.25511 302.015089,7299.03674 303.400182,7295.49028 C303.645956,7294.859 303.815113,7294.1374 303.86188,7293.08031 C304.26686,7284.19677 303.796207,7282.27117 302.251908,7280.72871 C301.027016,7279.50685 299.5862,7278.67508 289.869652,7279.12273 M289.951245,7297.06748 C288.981083,7297.0238 288.454707,7296.86201 288.103459,7296.72603 C287.219865,7296.3826 286.556174,7295.72155 286.214876,7294.84312 C285.623823,7293.32944 285.819846,7286.14023 285.872583,7284.97693 C285.924325,7283.83745 286.155174,7282.79624 286.959165,7281.99226 C287.954203,7280.99968 289.239792,7280.51332 297.993144,7280.90837 C299.135448,7280.95998 300.179243,7281.19026 300.985224,7281.99226 C301.980262,7282.98483 302.473801,7284.28014 302.071806,7292.99991 C302.028024,7293.96767 301.865833,7294.49274 301.729513,7294.84312 C300.829003,7297.15085 298.757333,7297.47145 289.951245,7297.06748 M298.089663,7283.68956 C298.089663,7284.34665 298.623998,7284.88065 299.283709,7284.88065 C299.943419,7284.88065 300.47875,7284.34665 300.47875,7283.68956 C300.47875,7283.03248 299.943419,7282.49847 299.283709,7282.49847 C298.623998,7282.49847 298.089663,7283.03248 298.089663,7283.68956 M288.862673,7288.98792 C288.862673,7291.80286 291.150266,7294.08479 293.972194,7294.08479 C296.794123,7294.08479 299.081716,7291.80286 299.081716,7288.98792 C299.081716,7286.17298 296.794123,7283.89205 293.972194,7283.89205 C291.150266,7283.89205 288.862673,7286.17298 288.862673,7288.98792 M290.655732,7288.98792 C290.655732,7287.16159 292.140329,7285.67967 293.972194,7285.67967 C295.80406,7285.67967 297.288657,7287.16159 297.288657,7288.98792 C297.288657,7290.81525 295.80406,7292.29716 293.972194,7292.29716 C292.140329,7292.29716 290.655732,7290.81525 290.655732,7288.98792" id="instagram-[#167]">
+
+                  </path>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div class="contact_2 contact_networks">
+          <svg style="margin-left: -3px;" fill="#000000" width="26" height="26" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1821.63 637.76c0-130.027-43.627-236.373-116.054-319.68 11.627-30.187 50.347-151.36-11.2-315.307 0 0-94.72-32-310.4 122.134-90.133-26.454-186.773-39.68-282.773-40.107-96 .427-192.64 13.653-282.667 40.107C602.749-29.227 507.923 2.773 507.923 2.773c-61.547 163.947-22.72 285.12-11.094 315.307-72.32 83.307-116.266 189.653-116.266 319.68 0 456.533 263.68 558.72 514.453 588.8 0 0-180.267 111.68-180.267 299.413-64.32 30.507-336.533 123.947-437.333-58.133 0 0-59.627-114.347-173.013-122.773 0 0-110.294-1.494-7.787 72.426 0 0 74.027 36.694 125.44 174.294 0 0 57.173 289.92 489.067 159.68 4.373 2.24 1.6 140.266 1.6 168.533h777.173s1.28-277.013 1.28-365.12c0-216.64-144.64-292.48-185.28-329.28 251.627-29.44 515.733-130.133 515.733-587.84" fill-rule="evenodd" />
+          </svg>
+        </div>
+        <div class="contact_3 contact_networks">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.50002 12C3.50002 7.30558 7.3056 3.5 12 3.5C16.6944 3.5 20.5 7.30558 20.5 12C20.5 16.6944 16.6944 20.5 12 20.5C10.3278 20.5 8.77127 20.0182 7.45798 19.1861C7.21357 19.0313 6.91408 18.9899 6.63684 19.0726L3.75769 19.9319L4.84173 17.3953C4.96986 17.0955 4.94379 16.7521 4.77187 16.4751C3.9657 15.176 3.50002 13.6439 3.50002 12ZM12 1.5C6.20103 1.5 1.50002 6.20101 1.50002 12C1.50002 13.8381 1.97316 15.5683 2.80465 17.0727L1.08047 21.107C0.928048 21.4637 0.99561 21.8763 1.25382 22.1657C1.51203 22.4552 1.91432 22.5692 2.28599 22.4582L6.78541 21.1155C8.32245 21.9965 10.1037 22.5 12 22.5C17.799 22.5 22.5 17.799 22.5 12C22.5 6.20101 17.799 1.5 12 1.5ZM14.2925 14.1824L12.9783 15.1081C12.3628 14.7575 11.6823 14.2681 10.9997 13.5855C10.2901 12.8759 9.76402 12.1433 9.37612 11.4713L10.2113 10.7624C10.5697 10.4582 10.6678 9.94533 10.447 9.53028L9.38284 7.53028C9.23954 7.26097 8.98116 7.0718 8.68115 7.01654C8.38113 6.96129 8.07231 7.046 7.84247 7.24659L7.52696 7.52195C6.76823 8.18414 6.3195 9.2723 6.69141 10.3741C7.07698 11.5163 7.89983 13.314 9.58552 14.9997C11.3991 16.8133 13.2413 17.5275 14.3186 17.8049C15.1866 18.0283 16.008 17.7288 16.5868 17.2572L17.1783 16.7752C17.4313 16.5691 17.5678 16.2524 17.544 15.9269C17.5201 15.6014 17.3389 15.308 17.0585 15.1409L15.3802 14.1409C15.0412 13.939 14.6152 13.9552 14.2925 14.1824Z" fill="#000000" />
+          </svg>
+        </div>
+      </div>
+    </section>
+    <section class="about_project">
+      <div class="gradient"></div>
+      <div class="more_about_project">
+        <div class="top">
+          <p>
+            O que é Infinix OS
+          </p>
+        </div>
+        <div class="text">
+          <p>
+            A infinix OS é um dos mais tradicionais do país em todo o país desde o início do século e no país do mundo a partir do ano que vêm a partir de 2001 e de todo o mundo contribuam com melhorias e correções de qualidade de imagem em cada um deles.
+          </p>
+        </div>
+      </div>
+
+      <div class="image">
+        <img src="media/img_about_01.jpg" alt="banner" />
+      </div>
+    </section>
+    <section class="project">
+      <div class="top">
+        <h1>Nosso projeto visa a automação de tarefas que podem ser facilmente executadas pelo nosso programa.</h1>
+      </div>
+      <div class="list_functions">
+        <div class="function function_2">
+          <span>
+            <svg style="margin-bottom:-6px;" width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="Menu / Close_MD">
+                <path id="Vector" d="M18 18L12 12M12 12L6 6M12 12L18 6M12 12L6 18" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+            </svg>
+          </span>
+          <label>Gestão de tarefas</label>
+          <br />
+          <br />
+          <br />
+          <p>
+            Estados e Estados do país em que o mesmo elemento químico existe sob a forma como o switch do Brasil se refere a uma obstrução nas artérias de uma quantidade.
+          </p>
+
+        </div>
+        <div class="function function_2">
+          <span>
+            <svg style="margin-bottom:-6px;" width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="Menu / Close_MD">
+                <path id="Vector" d="M18 18L12 12M12 12L6 6M12 12L18 6M12 12L6 18" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+            </svg>
+          </span>
+          <label>Gestão de tarefas</label>
+          <br />
+          <br />
+          <br />
+          <p>
+            Estados e Estados do país em que o mesmo elemento químico existe sob a forma como o switch do Brasil se refere a uma obstrução nas artérias de uma quantidade.
+          </p>
+
+        </div>
+        <div class="function function_3">
+          <span>
+            <svg style="margin-bottom:-6px;" width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="Menu / Close_MD">
+                <path id="Vector" d="M18 18L12 12M12 12L6 6M12 12L18 6M12 12L6 18" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+            </svg>
+          </span>
+          <label>Gestão de tarefas</label>
+          <br />
+          <br />
+          <br />
+          <p>
+            Estados e Estados do país em que o mesmo elemento químico existe sob a forma como o switch do Brasil se refere a uma obstrução nas artérias de uma quantidade.
+          </p>
+
+        </div>
+        <div class="function function_4">
+          <span>
+            <svg style="margin-bottom:-6px;" width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="Menu / Close_MD">
+                <path id="Vector" d="M18 18L12 12M12 12L6 6M12 12L18 6M12 12L6 18" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+            </svg>
+          </span>
+          <label>Gestão de tarefas</label>
+          <br />
+          <br />
+          <br />
+          <p>
+            Estados e Estados do país em que o mesmo elemento químico existe sob a forma como o switch do Brasil se refere a uma obstrução nas artérias de uma quantidade.
+          </p>
+
+        </div>
+        <div class="function function_5">
+          <span>
+            <svg style="margin-bottom:-6px;" width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="Menu / Close_MD">
+                <path id="Vector" d="M18 18L12 12M12 12L6 6M12 12L18 6M12 12L6 18" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+            </svg>
+          </span>
+          <label>Gestão de tarefas</label>
+          <br />
+          <br />
+          <br />
+          <p>
+            Estados e Estados do país em que o mesmo elemento químico existe sob a forma como o switch do Brasil se refere a uma obstrução nas artérias de uma quantidade.
+          </p>
+
+        </div>
+      </div>
+    </section>
+    <section class="retractable_bottom_menu">
+      <button class="option active">
+        <span>
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="Navigation / House_01">
+              <path id="Vector" d="M20 17.0002V11.4522C20 10.9179 19.9995 10.6506 19.9346 10.4019C19.877 10.1816 19.7825 9.97307 19.6546 9.78464C19.5102 9.57201 19.3096 9.39569 18.9074 9.04383L14.1074 4.84383C13.3608 4.19054 12.9875 3.86406 12.5674 3.73982C12.1972 3.63035 11.8026 3.63035 11.4324 3.73982C11.0126 3.86397 10.6398 4.19014 9.89436 4.84244L5.09277 9.04383C4.69064 9.39569 4.49004 9.57201 4.3457 9.78464C4.21779 9.97307 4.12255 10.1816 4.06497 10.4019C4 10.6506 4 10.9179 4 11.4522V17.0002C4 17.932 4 18.3978 4.15224 18.7654C4.35523 19.2554 4.74432 19.6452 5.23438 19.8482C5.60192 20.0005 6.06786 20.0005 6.99974 20.0005C7.93163 20.0005 8.39808 20.0005 8.76562 19.8482C9.25568 19.6452 9.64467 19.2555 9.84766 18.7654C9.9999 18.3979 10 17.932 10 17.0001V16.0001C10 14.8955 10.8954 14.0001 12 14.0001C13.1046 14.0001 14 14.8955 14 16.0001V17.0001C14 17.932 14 18.3979 14.1522 18.7654C14.3552 19.2555 14.7443 19.6452 15.2344 19.8482C15.6019 20.0005 16.0679 20.0005 16.9997 20.0005C17.9316 20.0005 18.3981 20.0005 18.7656 19.8482C19.2557 19.6452 19.6447 19.2554 19.8477 18.7654C19.9999 18.3978 20 17.932 20 17.0002Z"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </g>
+          </svg>
+        </span>
+        Inicio
+      </button>
+      <button class="option">
+        <span>
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="Environment / Bulb">
+              <path id="Vector" d="M9 21H15M12 3C8.68629 3 6 5.68629 6 9C6 10.2145 6.36084 11.3447 6.98117 12.2893C7.93507 13.7418 8.41161 14.4676 8.47352 14.5761C9.02428 15.541 8.92287 15.2007 8.99219 16.3096C8.99998 16.4342 9 16.6229 9 17C9 17.5523 9.44772 18 10 18L14 18C14.5523 18 15 17.5523 15 17C15 16.6229 15 16.4342 15.0078 16.3096C15.0771 15.2007 14.9751 15.541 15.5259 14.5761C15.5878 14.4676 16.0651 13.7418 17.019 12.2893C17.6394 11.3447 18.0002 10.2145 18.0002 9C18.0002 5.68629 15.3137 3 12 3Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </g>
+          </svg>
+        </span>
+        Soluções
+      </button>
+      <button class="option">
+        <span>
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="Communication / Chat_Circle">
+              <path id="Vector" d="M7.50977 19.8018C8.83126 20.5639 10.3645 21 11.9996 21C16.9702 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 13.6351 3.43604 15.1684 4.19819 16.4899L4.20114 16.495C4.27448 16.6221 4.31146 16.6863 4.32821 16.7469C4.34401 16.804 4.34842 16.8554 4.34437 16.9146C4.34003 16.9781 4.3186 17.044 4.27468 17.1758L3.50586 19.4823L3.50489 19.4853C3.34268 19.9719 3.26157 20.2152 3.31938 20.3774C3.36979 20.5187 3.48169 20.6303 3.62305 20.6807C3.78482 20.7384 4.02705 20.6577 4.51155 20.4962L4.51758 20.4939L6.82405 19.7251C6.95537 19.6813 7.02214 19.6591 7.08559 19.6548C7.14475 19.6507 7.19578 19.6561 7.25293 19.6719C7.31368 19.6887 7.37783 19.7257 7.50563 19.7994L7.50977 19.8018Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </g>
+          </svg>
+        </span>
+        Entre em contato
+      </button>
+      <button class="option">Projeto</button>
+    </section>
+  </main>
   <script type="text/javascript" charset="utf-8">
 
     if ("serviceWorker" in navigator) {
